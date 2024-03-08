@@ -14,7 +14,12 @@ module.exports = defineConfig({
                 sourcePath: {
                     'cypress-monocart-coverage/': ''
                 },
-                outputDir: './coverage-reports/e2e'
+                outputDir: './coverage-reports/e2e',
+                reports: [
+                    'v8',
+                    'console-details',
+                    'raw'
+                ]
             });
         }
     },
@@ -33,7 +38,12 @@ module.exports = defineConfig({
                 sourcePath: {
                     'cypress-monocart-coverage/': ''
                 },
-                outputDir: './coverage-reports/component'
+                outputDir: './coverage-reports/component',
+                reports: [
+                    'v8',
+                    'console-details',
+                    'raw'
+                ]
             });
         },
 

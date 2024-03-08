@@ -4,9 +4,10 @@
     "description": "Cypress Coverage Plugin for Monocart Coverage Reports",
     "main": "./lib/index.js",
     "scripts": {
-        "test": "npm run test:e2e && npm run test:component",
+        "test": "npm run test:e2e && npm run test:component && npm run merge",
         "test:e2e": "npx cypress run --browser edge",
-        "test:component": "npx cypress run --component --browser edge"
+        "test:component": "npx cypress run --component --browser edge",
+        "merge": "node ./merge-coverage.js"
     },
     "license": "MIT",
     "dependencies": {
