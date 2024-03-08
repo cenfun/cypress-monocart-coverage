@@ -1,6 +1,8 @@
 const { defineConfig } = require('cypress');
 
 const CypressCoveragePlugin = require('./lib');
+// const CypressCoveragePlugin = require('cypress-monocart-coverage');
+
 
 module.exports = defineConfig({
     e2e: {

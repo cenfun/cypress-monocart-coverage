@@ -3,12 +3,20 @@
     "version": "1.0.0",
     "description": "Cypress Coverage Plugin for Monocart Coverage Reports",
     "main": "./lib/index.js",
+    "exports": {
+        ".": "./lib/index.js",
+        "./support": "./lib/support.js",
+        "./package.json": "./package.json"
+    },
     "scripts": {
         "test": "npm run test:e2e && npm run test:component && npm run merge",
         "test:e2e": "npx cypress run --browser edge",
         "test:component": "npx cypress run --component --browser edge",
         "merge": "node ./merge-coverage.js"
     },
+    "files": [
+        "lib"
+    ],
     "license": "MIT",
     "dependencies": {
         "monocart-coverage-reports": "^2.6.5",
