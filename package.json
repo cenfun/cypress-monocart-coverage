@@ -2,13 +2,16 @@
     "name": "cypress-monocart-coverage",
     "version": "1.0.0",
     "description": "Cypress Coverage Plugin for Monocart Coverage Reports",
-    "main": "",
+    "main": "./lib/index.js",
     "scripts": {
-        "test": "npx cypress run && npx cypress run --component"
+        "test": "npm run test:e2e && npm run test:component",
+        "test:e2e": "npx cypress run --browser edge",
+        "test:component": "npx cypress run --component --browser edge"
     },
     "license": "MIT",
     "dependencies": {
-        "monocart-coverage-reports": "^2.6.5"
+        "monocart-coverage-reports": "^2.6.5",
+        "playwright": "^1.42.1"
     },
     "devDependencies": {
         "@babel/preset-react": "^7.23.3",
