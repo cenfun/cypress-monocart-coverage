@@ -11,6 +11,14 @@
 npm i cypress-monocart-coverage
 ```
 
+## Feature
+- Cypress 13+
+- V8 Coverage Only
+- Supported Browsers
+    - chrome
+    - chromium
+    - edge
+
 ## Usage for E2E Testing
 - add support
 ```js
