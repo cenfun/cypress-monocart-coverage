@@ -1,6 +1,6 @@
 {
     "name": "cypress-monocart-coverage",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "description": "Cypress Coverage Plugin for Monocart Coverage Reports",
     "main": "./lib/index.js",
     "exports": {
