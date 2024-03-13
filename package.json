@@ -20,8 +20,7 @@
     ],
     "license": "MIT",
     "dependencies": {
-        "monocart-coverage-reports": "^2.6.5",
-        "playwright": "^1.42.1"
+        "monocart-coverage-reports": "^2.7.1"
     },
     "devDependencies": {
         "@babel/preset-react": "^7.23.3",
